@@ -72,7 +72,7 @@ function getRandomColor() {
   const colorTwo = 0;
   let colorThree = Math.floor(Math.random() * 255);
 
-  let randomInt = Math.random() * 10
+  let randomInt = Math.random() * 10;
   if (randomInt < 2) return `rgb(${colorOne}, ${colorTwo}, ${colorThree})`;
   else if (randomInt < 4) return `rgb(${colorTwo}, ${colorThree}, ${colorOne})`;
   else if (randomInt < 6) return `rgb(${colorThree}, ${colorOne}, ${colorTwo}`;
