@@ -45,6 +45,7 @@ function createGrid(size) {
 
 function handleSizeClick() {
   let input = prompt("Please entire a size between 1 and 100", "16");
+  if (input === null) return;
   if (isNaN(input) || input < 1 || input > 100) {
     alert("The input is invalid");
   } else {
