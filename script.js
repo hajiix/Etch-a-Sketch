@@ -77,21 +77,21 @@ function handleSquareInteraction(e) {
     if (isShade && e.target.classList.contains("clicked")) {
       let rgbValues = squareColor
         ? squareColor.match(/\d+/g).map(Number)
-        : [165, 42, 42];
+        : [162, 124, 197];
       e.target.style.backgroundColor = shadeSquare(rgbValues);
     } else if (isColorful) {
       e.target.style.backgroundColor = getRandomColor();
     } else {
-      e.target.style.backgroundColor = "rgb(165, 42, 42)";
+      e.target.style.backgroundColor = "rgb(162, 124, 197)";
     }
     e.target.classList.add("clicked");
   }
 }
 
 function getRandomColor() {
-  const colorOne = 255;
-  const colorTwo = 0;
-  let colorThree = Math.floor(Math.random() * 255);
+  const colorOne = 220;
+  const colorTwo = 80;
+  let colorThree = 80 + Math.floor(Math.random() * 140);
 
   let randomInt = Math.random() * 10;
   if (randomInt < 2) return `rgb(${colorOne}, ${colorTwo}, ${colorThree})`;
