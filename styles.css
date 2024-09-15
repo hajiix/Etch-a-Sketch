@@ -21,6 +21,8 @@ body {
   font-family: "Shantell Sans", cursive;
   margin-bottom: 0.5em;
   width: 8em;
+  border: solid;
+  border-radius: 50px;
 }
 
 .grid {
@@ -42,13 +44,17 @@ body {
   height: 100%;
   width: 100%;
   border-style: solid;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .clicked {
-  background-color: brown;
+  background-color: rgb(165, 42, 42);
 }
 
 .square:hover {
   background-color: rgb(251, 183, 183);
+}
+
+.on {
+  background-color: rgb(44, 198, 44);
 }
